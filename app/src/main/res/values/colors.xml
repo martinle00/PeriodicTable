@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="correct">#FF58C416</color>
+    <color name="incorrect">#FFFC1D26</color>
+    <color name="actinide">#E1C1CC</color>
+    <color name="alkali">#009A5A</color>
+    <color name="alkalline">#0065B3</color>
+    <color name="halogen">#FEDBB5</color>
+    <color name="lanthanide">#EE3D97</color>
+    <color name="metalloid">#17BED0</color>
+    <color name="noble">#ED1A3B</color>
+    <color name="nonMetal">#C3DFA4</color>
+    <color name="postTrans">#FFCB05</color>
+    <color name="trans">#522E92</color>
+    <color name="unknown">#A5CE42</color>
+</resources>

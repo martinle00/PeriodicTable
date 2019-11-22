@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Periodic Table</string>
+    <string name="periodic_table">Periodic Table</string>
+    <string name="quiz">Quiz</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="lanthanides">Lanthanides</string>
+    <string name="actinides">Actinides</string>
+    <string name="down_arrow">∨</string>
+    <string name="lanthanides_atomic_number">57-71</string>
+    <string name="actinides_atomic_number">89-103</string>
+    <string name="guess_element">What\'s the element with atomic number</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+</resources>
