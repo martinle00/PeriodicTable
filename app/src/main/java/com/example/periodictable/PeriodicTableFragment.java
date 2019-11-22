@@ -175,7 +175,7 @@ public class PeriodicTableFragment extends Fragment implements AsyncTaskInsertDe
         TextView actinidesName = actinides.findViewById(R.id.name);
         TextView actinidesSymbol = actinides.findViewById(R.id.symbol);
         TextView actinidesAtomicNumber = actinides.findViewById(R.id.atomicNumber);
-        actinidesName.setText(R.string.lanthanides);
+        actinidesName.setText(R.string.actinides);
         actinidesSymbol.setText(R.string.down_arrow);
         actinidesSymbol.setTextSize(14);
         actinidesAtomicNumber.setText(R.string.actinides_atomic_number);

@@ -7,1213 +7,1234 @@
     android:layout_gravity="center"
     tools:context=".PeriodicTableFragment">
 
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp">
-
-                <include
-                    android:id="@+id/element1"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <include
-                    android:id="@+id/element2"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    app:layout_constraintStart_toStartOf="@id/element36"
-                    app:layout_constraintTop_toTopOf="@id/element1" />
-
-                <include
-                    android:id="@+id/element3"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element1"
-                    app:layout_constraintTop_toBottomOf="@id/element1" />
-
-                <include
-                    android:id="@+id/element4"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element3"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element5"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    app:layout_constraintStart_toStartOf="@id/element31"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element6"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element5"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element7"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element6"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element8"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element7"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element9"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element8"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element10"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element9"
-                    app:layout_constraintTop_toTopOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element11"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element3"
-                    app:layout_constraintTop_toBottomOf="@id/element3" />
-
-                <include
-                    android:id="@+id/element12"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element11"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element13"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    app:layout_constraintStart_toStartOf="@id/element31"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element14"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element5"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element15"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element6"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element16"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element7"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element17"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element8"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element18"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element9"
-                    app:layout_constraintTop_toTopOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element19"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element11"
-                    app:layout_constraintTop_toBottomOf="@id/element11" />
-
-                <include
-                    android:id="@+id/element20"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element19"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element21"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element20"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element22"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element21"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element23"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element22"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element24"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element23"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element25"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element24"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element26"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element25"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element27"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element26"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element28"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element27"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element29"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element28"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element30"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element29"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element31"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element30"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element32"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element31"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element33"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element32"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element34"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element33"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element35"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element34"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element36"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element35"
-                    app:layout_constraintTop_toTopOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element37"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element19"
-                    app:layout_constraintTop_toBottomOf="@id/element19" />
-
-                <include
-                    android:id="@+id/element38"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element37"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element39"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element38"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element40"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element39"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element41"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element40"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element42"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element41"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element43"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element42"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element44"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element43"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element45"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element44"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element46"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element45"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element47"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element46"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element48"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element47"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element49"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element48"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element50"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element49"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element51"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element50"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element52"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element51"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element53"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element52"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element54"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element53"
-                    app:layout_constraintTop_toTopOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element55"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element37"
-                    app:layout_constraintTop_toBottomOf="@id/element37" />
-
-                <include
-                    android:id="@+id/element56"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element55"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/Lanthanides"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element56"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element57"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
-                    app:layout_constraintStart_toEndOf="@id/element56"
-                    app:layout_constraintTop_toBottomOf="@id/Actinides" />
-
-                <include
-                    android:id="@+id/element58"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element57"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element59"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element58"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element60"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element59"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element61"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element60"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element62"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element61"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element63"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element62"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element64"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element63"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element65"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element64"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element66"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element65"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element67"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element66"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element68"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element67"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element69"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element68"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element70"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element69"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element71"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element70"
-                    app:layout_constraintTop_toTopOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element72"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/Lanthanides"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element73"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element72"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element74"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element73"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element75"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element74"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element76"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element75"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element77"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element76"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element78"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element77"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element79"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element78"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element80"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element79"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element81"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element80"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element82"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element81"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element83"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element82"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element84"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element83"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element85"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element84"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element86"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element85"
-                    app:layout_constraintTop_toTopOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element87"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toStartOf="@id/element55"
-                    app:layout_constraintTop_toBottomOf="@id/element55" />
-
-                <include
-                    android:id="@+id/element88"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element87"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/Actinides"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element88"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element89"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element56"
-                    app:layout_constraintTop_toBottomOf="@id/element57" />
-
-                <include
-                    android:id="@+id/element90"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element89"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element91"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element90"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element92"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element91"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element93"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element92"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element94"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element93"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element95"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element94"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element96"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element95"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element97"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element96"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element98"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element97"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element99"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element98"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element100"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element99"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element101"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element100"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element102"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element101"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element103"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element102"
-                    app:layout_constraintTop_toTopOf="@id/element89" />
-
-                <include
-                    android:id="@+id/element104"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/Actinides"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element105"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element104"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element106"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element105"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element107"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element106"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element108"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element107"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element109"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element108"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element110"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element109"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element111"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element110"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element112"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element111"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element113"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element112"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element114"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element113"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element115"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element114"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element116"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element115"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element117"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element116"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-
-                <include
-                    android:id="@+id/element118"
-                    layout="@layout/element_box"
-                    android:layout_width="25dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintStart_toEndOf="@id/element117"
-                    app:layout_constraintTop_toTopOf="@id/element87" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" />
+                    </HorizontalScrollView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp">
+
+                        <include
+                            android:id="@+id/element1"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <include
+                            android:id="@+id/element2"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintStart_toStartOf="@id/element36"
+                            app:layout_constraintTop_toTopOf="@id/element1" />
+
+                        <include
+                            android:id="@+id/element3"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element1"
+                            app:layout_constraintTop_toBottomOf="@id/element1" />
+
+                        <include
+                            android:id="@+id/element4"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element3"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element5"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintStart_toStartOf="@id/element31"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element6"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element5"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element7"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element6"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element8"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element7"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element9"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element8"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element10"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element9"
+                            app:layout_constraintTop_toTopOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element11"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element3"
+                            app:layout_constraintTop_toBottomOf="@id/element3" />
+
+                        <include
+                            android:id="@+id/element12"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element11"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element13"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            app:layout_constraintStart_toStartOf="@id/element31"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element14"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element5"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element15"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element6"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element16"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element7"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element17"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element8"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element18"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element9"
+                            app:layout_constraintTop_toTopOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element19"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element11"
+                            app:layout_constraintTop_toBottomOf="@id/element11" />
+
+                        <include
+                            android:id="@+id/element20"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element19"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element21"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element20"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element22"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element21"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element23"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element22"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element24"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element23"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element25"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element24"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element26"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element25"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element27"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element26"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element28"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element27"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element29"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element28"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element30"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element29"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element31"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element30"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element32"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element31"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element33"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element32"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element34"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element33"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element35"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element34"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element36"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element35"
+                            app:layout_constraintTop_toTopOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element37"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element19"
+                            app:layout_constraintTop_toBottomOf="@id/element19" />
+
+                        <include
+                            android:id="@+id/element38"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element37"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element39"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element38"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element40"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element39"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element41"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element40"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element42"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element41"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element43"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element42"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element44"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element43"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element45"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element44"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element46"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element45"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element47"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element46"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element48"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element47"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element49"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element48"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element50"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element49"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element51"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element50"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element52"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element51"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element53"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element52"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element54"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element53"
+                            app:layout_constraintTop_toTopOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element55"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element37"
+                            app:layout_constraintTop_toBottomOf="@id/element37" />
+
+                        <include
+                            android:id="@+id/element56"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element55"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/Lanthanides"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element56"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element57"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintStart_toEndOf="@id/element56"
+                            app:layout_constraintTop_toBottomOf="@id/Actinides" />
+
+                        <include
+                            android:id="@+id/element58"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element57"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element59"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element58"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element60"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element59"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element61"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element60"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element62"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element61"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element63"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element62"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element64"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element63"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element65"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element64"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element66"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element65"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element67"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element66"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element68"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element67"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element69"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element68"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element70"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element69"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element71"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element70"
+                            app:layout_constraintTop_toTopOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element72"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/Lanthanides"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element73"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element72"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element74"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element73"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element75"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element74"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element76"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element75"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element77"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element76"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element78"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element77"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element79"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element78"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element80"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element79"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element81"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element80"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element82"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element81"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element83"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element82"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element84"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element83"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element85"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element84"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element86"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element85"
+                            app:layout_constraintTop_toTopOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element87"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@id/element55"
+                            app:layout_constraintTop_toBottomOf="@id/element55" />
+
+                        <include
+                            android:id="@+id/element88"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element87"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/Actinides"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element88"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element89"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element56"
+                            app:layout_constraintTop_toBottomOf="@id/element57" />
+
+                        <include
+                            android:id="@+id/element90"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element89"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element91"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element90"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element92"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element91"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element93"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element92"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element94"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element93"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element95"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element94"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element96"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element95"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element97"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element96"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element98"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element97"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element99"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element98"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element100"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element99"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element101"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element100"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element102"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element101"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element103"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element102"
+                            app:layout_constraintTop_toTopOf="@id/element89" />
+
+                        <include
+                            android:id="@+id/element104"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/Actinides"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element105"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element104"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element106"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element105"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element107"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element106"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element108"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element107"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element109"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element108"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element110"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element109"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element111"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element110"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element112"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element111"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element113"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element112"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element114"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element113"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element115"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element114"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element116"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element115"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element117"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element116"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+
+                        <include
+                            android:id="@+id/element118"
+                            layout="@layout/element_box"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintStart_toEndOf="@id/element117"
+                            app:layout_constraintTop_toTopOf="@id/element87" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
 </FrameLayout>
